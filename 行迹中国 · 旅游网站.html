@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>行迹中国 · 旅游网站</title>
+<style>
+:root{--p:#1f5c55;--a:#b3261e;--bg:#f6f8f7;--cd:#fff;--t:#1f2937;--m:#5b6b78;--b:#dde5e2;--on:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--p:#7cc5b8;--bg:#0f1715;--cd:#17211f;--t:#e5ece9;--m:#9bb0ab;--b:#26332f;--on:#0d1f1c;color-scheme:dark}}
+:root[data-theme="dark"]{--p:#7cc5b8;--bg:#0f1715;--cd:#17211f;--t:#e5ece9;--m:#9bb0ab;--b:#26332f;--on:#0d1f1c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}[hidden]{display:none!important}
+body{background:var(--bg);color:var(--t);font:16px/1.7 "PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--cd);z-index:30}
+h1,h2,h3,.logo{font-family:"Noto Serif SC","Songti SC",serif;line-height:1.3}
+h2{font-size:28px;margin:36px 0 16px}a{color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--cd);border-bottom:1px solid var(--b)}
+.nav{max-width:1100px;margin:auto;padding:10px 20px;display:flex;align-items:center;gap:6px}
+.logo{font-size:22px;font-weight:700;color:var(--p);margin-right:auto;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{background:var(--a);color:#fff;font:700 15px/1 serif;padding:6px 5px;border-radius:4px;font-style:normal}
+.links{display:flex;gap:4px}.links a{padding:6px 14px;border-radius:99px;text-decoration:none;transition:.2s}
+.links a:hover,.links a.on{background:var(--p);color:var(--on)}
+.ib{border:1px solid var(--b);background:var(--cd);color:var(--t);border-radius:99px;width:38px;height:38px;cursor:pointer;font-size:16px}.mb{display:none}
+main{max-width:1100px;margin:auto;padding:28px 20px 60px;min-height:70vh}main.fi{animation:fi .5s}
+@keyframes fi{from{opacity:0;transform:translateY(14px)}}
+.hero{position:relative;height:min(68vh,500px);border-radius:20px;overflow:hidden;color:#fff}
+.sl{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:0 7%;opacity:0;transition:opacity 1s;pointer-events:none;text-shadow:0 2px 12px #0006}
+.sl.on{opacity:1;pointer-events:auto}.sl h1{font-size:clamp(30px,6vw,54px);max-width:12em}
+.dots{position:absolute;bottom:16px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:3}
+.dots i{width:10px;height:10px;border-radius:99px;background:#fff7;cursor:pointer;transition:.3s}.dots i.on{width:28px;background:#fff}
+.btn{display:inline-block;padding:10px 24px;border:0;border-radius:99px;background:var(--a);color:#fff;font:600 16px inherit;font-family:inherit;cursor:pointer;text-decoration:none;transition:.2s;text-shadow:none}.btn:hover{transform:scale(1.05)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0;text-align:center}
+.st b{display:block;font:700 40px "Noto Serif SC",serif;color:var(--p)}.st span{color:var(--m);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.card{display:block;background:var(--cd);border:1px solid var(--b);border-radius:14px;overflow:hidden;text-decoration:none;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 28px #0002}
+.cv{height:140px;display:grid;place-items:center;font-size:54px;color:#fff}.cb{padding:14px 16px 16px}
+.tag{display:inline-block;padding:2px 12px;border-radius:99px;background:color-mix(in srgb,var(--p) 14%,transparent);color:var(--p);font-size:14px;margin:0 6px 6px 0;border:0;font-family:inherit;cursor:pointer}
+.tag.on{background:var(--p);color:var(--on)}.mu{color:var(--m);font-size:15px}.pr{color:var(--a);font-size:18px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+.ph{border-radius:18px;color:#fff;padding:44px 6%;margin:12px 0 8px;text-shadow:0 2px 10px #0005}.ph h1{font-size:clamp(30px,5vw,44px)}.ph span{font-size:44px}
+.bc{color:var(--m);font-size:14px}.bc a{text-decoration:none}.bc a:hover{text-decoration:underline}
+.two{display:grid;grid-template-columns:1fr 300px;gap:28px;align-items:start}
+.side{position:sticky;top:90px;background:var(--cd);border:1px solid var(--b);border-radius:14px;padding:20px}
+.tl{border-left:3px solid var(--p);padding-left:22px}.tl div{position:relative;margin-bottom:18px}
+.tl div::before{content:"";position:absolute;left:-30px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--a)}
+details{background:var(--cd);border:1px solid var(--b);border-radius:12px;padding:14px 18px;margin-bottom:12px}summary{cursor:pointer;font-weight:600}details p{margin-top:8px;color:var(--m)}
+input,textarea{width:100%;padding:10px 12px;border:1px solid var(--b);border-radius:10px;background:var(--cd);color:var(--t);font:inherit;margin:4px 0 12px}
+form{max-width:520px}#msg{min-height:26px;margin-bottom:8px;color:var(--a)}
+footer{text-align:center;color:var(--m);padding:28px 20px;border-top:1px solid var(--b);font-size:14px}
+#up{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transition:.3s}#up.show{opacity:1;pointer-events:auto}
+:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+@media(max-width:860px){.two{grid-template-columns:1fr}.side{position:static}}
+@media(max-width:760px){.mb{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cd);flex-direction:column;padding:10px 20px;border-bottom:1px solid var(--b)}.links.open{display:flex}.st{grid-template-columns:repeat(2,1fr)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style></head><body>
+<header><div class="nav"><a class="logo" href="#home" data-go="home"><i>行</i>行迹中国</a>
+<nav class="links" id="nv"><a href="#home" data-go="home">首页</a><a href="#dest" data-go="dest">目的地</a><a href="#routes" data-go="routes">线路</a><a href="#guide" data-go="guide">攻略</a><a href="#contact" data-go="contact">联系我们</a></nav>
+<button class="ib" id="th" aria-label="切换深浅色">◐</button><button class="ib mb" id="bg" aria-label="菜单">☰</button></div></header>
+<main></main><footer>© 2026 行迹中国 · 国内旅游目的地与线路推荐</footer><button class="ib" id="up" aria-label="回到顶部">↑</button>
+<script>
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const D=[
+{id:'hz',n:'杭州',e:'🌊',t:'人文',s:'春、秋',c:['#1f5c55','#2f9e8f'],d:'西湖烟雨、龙井茶香，宋韵江南的诗意样本。',h:['西湖','灵隐寺','龙井村','河坊街']},
+{id:'cd',n:'成都',e:'🐼',t:'美食',s:'3–6 月',c:['#9a3412','#ea580c'],d:'火锅、茶馆与大熊猫，慢节奏里的烟火人间。',h:['大熊猫基地','宽窄巷子','都江堰','锦里']},
+{id:'xa',n:'西安',e:'🏯',t:'历史',s:'4–5 月、9–10 月',c:['#7c2d12','#b45309'],d:'十三朝古都，兵马俑与城墙讲述千年长安。',h:['兵马俑','古城墙','大雁塔','回民街']},
+{id:'gl',n:'桂林',e:'⛰️',t:'山水',s:'4–10 月',c:['#166534','#16a34a'],d:'山青水秀，漓江竹筏漂过一幅活的山水画。',h:['漓江','象鼻山','阳朔西街','龙脊梯田']}];
+const R=[
+{id:'1',n:'江南慢游 · 4 日',d:'hz',p:2680,l:['抵达杭州，漫步西湖断桥，夜宿湖畔','灵隐寺祈福，龙井村采茶品茗','乌镇古镇摇橹船，体验枕水人家','西溪湿地晨游，返程']},
+{id:'2',n:'蜀中美食 · 5 日',d:'cd',p:3180,l:['抵达成都，宽窄巷子夜市','大熊猫基地看萌宠，锦里小吃','都江堰水利奇观','学做川菜，茶馆喝盖碗茶','自由购物，返程']},
+{id:'3',n:'丝路寻古 · 4 日',d:'xa',p:2980,l:['抵达西安，回民街夜游','兵马俑与华清宫','古城墙骑行，大雁塔喷泉','陕西历史博物馆，返程']}];
+const G=[['行李清单','证件、充电宝、防晒、舒适的鞋；按目的地天气增减衣物，贵重物品随身携带。'],['错峰出行','避开法定节假日，工作日出行通常更省钱；热门景点提前线上预约。'],['省钱技巧','高铁提前购票，住宿选地铁沿线，景点联票和城市卡往往更划算。']];
+const S=[['江南烟雨，一盏茶的慢时光',0],['蜀地烟火，一口麻辣的人间',1],['千年长安，一座城的回响',2]];
+let fav=[];try{fav=JSON.parse(localStorage.getItem('fav')||'[]')}catch(e){}
+const gr=d=>`linear-gradient(135deg,${d.c[0]},${d.c[1]})`,dd=i=>D.find(x=>x.id==i);
+const dc=d=>`<a class="card rv" data-t="${d.t}" href="#d-${d.id}" data-go="d-${d.id}"><div class="cv" style="background:${gr(d)}">${d.e}</div><div class="cb"><h3>${d.n}</h3><span class="tag">${d.t}</span><p class="mu">${d.d}</p></div></a>`;
+const rc=r=>{const d=dd(r.d);return `<a class="card rv" href="#r-${r.id}" data-go="r-${r.id}"><div class="cv" style="background:${gr(d)}">${d.e}</div><div class="cb"><h3>${r.n}</h3><p class="mu">${d.n} · ${r.l.length} 天行程</p><b class="pr">¥${r.p} 起</b></div></a>`};
+const bc=(a,b)=>`<p class="bc"><a href="#home" data-go="home">首页</a> › ${a} › ${b}</p>`;
+const H=()=>`<section class="hero">${S.map((s,i)=>{const d=D[s[1]];return `<div class="sl${i?'':' on'}" style="background:${gr(d)}"><h1>${s[0]}</h1><p>${d.d}</p><p><a class="btn" href="#d-${d.id}" data-go="d-${d.id}">探索${d.n}</a></p></div>`}).join('')}<div class="dots">${S.map((s,i)=>`<i data-s="${i}" class="${i?'':'on'}"></i>`).join('')}</div></section>
+<div class="st">${[[4,'精选目的地'],[3,'精品线路'],[16,'个必去景点'],[98,'% 好评率']].map(x=>`<div><b data-n="${x[0]}">0</b><span>${x[1]}</span></div>`).join('')}</div>
+<h2>热门目的地</h2><div class="grid">${D.map(dc).join('')}</div><h2>精品线路</h2><div class="grid">${R.map(rc).join('')}</div>
+<h2>想好去哪了？</h2><p class="rv">告诉我们出行时间和人数，24 小时内收到行程建议。</p><p style="margin-top:14px"><a class="btn" href="#contact" data-go="contact">提交咨询</a></p>`;
+const DL=()=>`${bc('','目的地').replace(' › ','')}<div class="ph" style="background:${gr(D[0])}"><h1>目的地</h1><p>按主题挑选下一站</p></div><p style="margin:16px 0">${['全部',...new Set(D.map(d=>d.t))].map((t,i)=>`<button class="tag${i?'':' on'}" data-f="${t}">${t}</button>`).join('')}</p><div class="grid" id="gd">${D.map(dc).join('')}</div>`;
+const DD=i=>{const d=dd(i)||D[0],rs=R.filter(r=>r.d==d.id);return `${bc('<a href="#dest" data-go="dest">目的地</a>',d.n)}<div class="ph" style="background:${gr(d)}"><span>${d.e}</span><h1>${d.n}</h1><p>${d.d}</p></div><div class="two"><div><h2>必去亮点</h2><p>${d.h.map(x=>`<span class="tag">${x}</span>`).join('')}</p><p class="mu">最佳季节：${d.s}　｜　主题：${d.t}</p></div><div class="side"><p class="mu" style="margin-bottom:10px">喜欢就先收藏，稍后再比较。</p><button class="btn" data-fav="${d.id}">${fav.includes(d.id)?'♥ 已收藏':'♡ 收藏'}</button></div></div><h2>相关线路</h2><div class="grid">${rs.map(rc).join('')||'<p class="mu">该目的地的线路正在筹备中。</p>'}</div>`};
+const RL=()=>`${bc('','线路').replace(' › ','')}<div class="ph" style="background:${gr(D[1])}"><h1>精品线路</h1><p>每日行程清晰，价格透明</p></div><h2>全部线路</h2><div class="grid">${R.map(rc).join('')}</div>`;
+const RD=i=>{const r=R.find(x=>x.id==i)||R[0],d=dd(r.d);return `${bc('<a href="#routes" data-go="routes">线路</a>',r.n)}<div class="ph" style="background:${gr(d)}"><span>${d.e}</span><h1>${r.n}</h1></div><div class="two"><div><h2>每日行程</h2><div class="tl">${r.l.map((t,k)=>`<div class="rv"><b>第 ${k+1} 天</b>　${t}</div>`).join('')}</div></div><div class="side"><b class="pr" style="font-size:28px">¥${r.p} 起</b><p class="mu" style="margin:6px 0 14px">每人，含住宿与门票</p><a class="btn" href="#contact" data-go="contact">咨询这条线路</a></div></div>`};
+const GD=()=>`${bc('','攻略').replace(' › ','')}<div class="ph" style="background:${gr(D[3])}"><h1>出行攻略</h1><p>出发前花三分钟读完</p></div><h2>实用建议</h2>${G.map(g=>`<details class="rv"><summary>${g[0]}</summary><p>${g[1]}</p></details>`).join('')}`;
+const CT=()=>`${bc('','联系我们').replace(' › ','')}<h2>提交咨询</h2><form novalidate><label>姓名<input name="n" autocomplete="name"></label><label>手机号<input name="p" inputmode="numeric" autocomplete="tel"></label><label>想去哪里<textarea name="m" rows="3"></textarea></label><p id="msg" role="alert"></p><button class="btn">提交咨询</button></form>`;
+let tm,si=0,cur='';
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');if(e.target.dataset.n)cnt(e.target);io.unobserve(e.target)}}),{threshold:.15});
+function cnt(el){const n=+el.dataset.n,t0=performance.now();(function f(t){const k=Math.min(1,(t-t0)/1200);el.textContent=Math.round(n*k);if(k<1)requestAnimationFrame(f)})(t0)}
+function show(i){si=i;$$('.sl').forEach((e,k)=>e.classList.toggle('on',k==i));$$('.dots i').forEach((e,k)=>e.classList.toggle('on',k==i))}
+function go(id){clearInterval(tm);const k=id.split('-'),p=k[0],m=$('main');let h;
+if(id=='dest')h=DL();else if(p=='d')h=DD(k[1]);else if(id=='routes')h=RL();else if(p=='r')h=RD(k[1]);else if(id=='guide')h=GD();else if(id=='contact')h=CT();else{id='home';h=H()}
+m.innerHTML=h;m.classList.remove('fi');void m.offsetWidth;m.classList.add('fi');
+const top={d:'dest',r:'routes'}[p]||id;$$('.links a').forEach(a=>a.classList.toggle('on',a.dataset.go==top));
+$('#nv').classList.remove('open');scrollTo(0,0);cur=id;try{location.hash=id}catch(e){}
+$$('.rv,[data-n]').forEach(e=>io.observe(e));if(id=='home'){si=0;tm=setInterval(()=>show((si+1)%S.length),5000)}}
+document.addEventListener('click',e=>{const t=e.target;let a;
+if(a=t.closest('[data-go]')){e.preventDefault();go(a.dataset.go)}
+else if(a=t.closest('[data-s]'))show(+a.dataset.s);
+else if(a=t.closest('[data-f]')){$$('[data-f]').forEach(x=>x.classList.toggle('on',x==a));$$('#gd .card').forEach(c=>c.hidden=a.dataset.f!='全部'&&c.dataset.t!=a.dataset.f)}
+else if(a=t.closest('[data-fav]')){const i=a.dataset.fav;fav=fav.includes(i)?fav.filter(x=>x!=i):[...fav,i];try{localStorage.setItem('fav',JSON.stringify(fav))}catch(e){}a.textContent=fav.includes(i)?'♥ 已收藏':'♡ 收藏'}});
+document.addEventListener('submit',e=>{e.preventDefault();const f=e.target,m=$('#msg');m.style.color='var(--a)';
+if(!f.n.value.trim())m.textContent='请填写姓名。';else if(!/^1[3-9]\d{9}$/.test(f.p.value.trim()))m.textContent='请输入 11 位手机号。';
+else{m.style.color='var(--p)';m.textContent='提交成功，我们将在 24 小时内联系你。';f.reset()}});
+$('#bg').onclick=()=>$('#nv').classList.toggle('open');
+$('#th').onclick=()=>{const r=document.documentElement,dk=r.dataset.theme=='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);r.dataset.theme=dk?'light':'dark'};
+$('#up').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+addEventListener('scroll',()=>$('#up').classList.toggle('show',scrollY>400));
+addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(h&&h!==cur)go(h)});
+go(location.hash.slice(1)||'home');
+</script></body></html>
